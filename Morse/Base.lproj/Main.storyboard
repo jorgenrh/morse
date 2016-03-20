@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Morse" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="HUb-d6-Tte" customClass="MDTextView" customModule="Morse" customModuleProvider="target">
+                                <rect key="frame" x="20" y="31" width="560" height="113"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">NSRegularExpression: How to match regular expressions in strings – Swift 2.0 example code. ... substringWithRange(swiftRange) } } } catch { // regex was bad! }</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DwF-T3-Kfh">
+                                <rect key="frame" x="20" y="152" width="560" height="30"/>
+                                <state key="normal" title="Encode"/>
+                                <connections>
+                                    <action selector="encodeBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dfi-ix-Vq7"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="XcV-YE-M3S" customClass="MDTextView" customModule="Morse" customModuleProvider="target">
+                                <rect key="frame" x="20" y="207" width="560" height="127"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y01-h7-bv5">
+                                <rect key="frame" x="20" y="342" width="560" height="30"/>
+                                <state key="normal" title="Decode"/>
+                                <connections>
+                                    <action selector="decodeBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qmI-bB-kEa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CNY-NP-53B">
+                                <rect key="frame" x="20" y="411" width="560" height="30"/>
+                                <state key="normal" title="Tone"/>
+                                <connections>
+                                    <action selector="playBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ADd-j7-KkO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wej-c6-sEn">
+                                <rect key="frame" x="20" y="463" width="560" height="30"/>
+                                <state key="normal" title="Torch"/>
+                                <connections>
+                                    <action selector="torchBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gqu-S4-0Zq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JHi-B4-950">
+                                <rect key="frame" x="20" y="513" width="560" height="30"/>
+                                <state key="normal" title="Tone &amp; Torch"/>
+                                <connections>
+                                    <action selector="toneTorchBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5co-jC-Fwm"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="Y01-h7-bv5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="5tD-rl-ZoR"/>
+                            <constraint firstItem="JHi-B4-950" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="7Dn-Dc-aJU"/>
+                            <constraint firstItem="CNY-NP-53B" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="FW4-HK-KLo"/>
+                            <constraint firstItem="CNY-NP-53B" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Mzi-XS-oyE"/>
+                            <constraint firstItem="JHi-B4-950" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="SMb-aO-RUU"/>
+                            <constraint firstItem="XcV-YE-M3S" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="TTX-uH-d2R"/>
+                            <constraint firstItem="DwF-T3-Kfh" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Vck-RX-PtF"/>
+                            <constraint firstItem="Wej-c6-sEn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Vsz-CG-99G"/>
+                            <constraint firstItem="Y01-h7-bv5" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Y6k-JD-JjY"/>
+                            <constraint firstItem="Wej-c6-sEn" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="cu4-Fq-hbj"/>
+                            <constraint firstItem="XcV-YE-M3S" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="nu2-FD-LLm"/>
+                            <constraint firstItem="DwF-T3-Kfh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="oFo-py-dqP"/>
+                            <constraint firstItem="HUb-d6-Tte" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="pID-hb-9mL"/>
+                            <constraint firstItem="HUb-d6-Tte" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="weA-8i-vlF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="decodedTextView" destination="XcV-YE-M3S" id="5NH-sv-RCG"/>
+                        <outlet property="encodedTextView" destination="HUb-d6-Tte" id="w3z-fk-8ZI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="429"/>
+        </scene>
+    </scenes>
+</document>
